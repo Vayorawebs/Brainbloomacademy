@@ -1,4 +1,6 @@
 import styles from './Courses.module.css';
+import courseScienceImg from '../assets/images/course_science_1777145715194.png';
+import courseCommerceImg from '../assets/images/course_commerce_1777145731352.png';
 
 const courses = [
   {
@@ -22,7 +24,7 @@ const courses = [
     grade: "11th & 12th",
     title: "Science (Medical / Non-Medical)",
     subjects: "Physics, Chemistry, Math, Biology",
-    image: "/images/course_science_1777145715194.png",
+    image: courseScienceImg,
     description: "High-level cognitive coaching aligning board preparations with severe competitive exam readiness. Taught by specialized subject matter experts."
   },
   {
@@ -30,7 +32,7 @@ const courses = [
     grade: "11th & 12th",
     title: "Commerce & Humanities",
     subjects: "Accountancy, Economics, Business, History",
-    image: "/images/course_commerce_1777145731352.png",
+    image: courseCommerceImg,
     description: "Comprehensive financial and theoretical mastery. Our courses combine textbook learning with real-world case studies for total student fluency."
   }
 ];

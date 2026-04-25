@@ -1,5 +1,6 @@
 import styles from './About.module.css';
 import { Target, Award, Lightbulb, Users, CheckCircle } from 'lucide-react';
+import aboutTeacherImg from '../assets/images/about_teacher_1777145581279.png';
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
           
           <div className={styles.imageColumn}>
             <img 
-              src="/images/about_teacher_1777145581279.png" 
+              src={aboutTeacherImg} 
               alt="Classroom Education" 
               className={styles.aboutImage}
             />

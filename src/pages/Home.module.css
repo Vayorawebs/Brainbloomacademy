@@ -8,7 +8,7 @@
   min-height: 85vh;
   display: flex;
   align-items: center;
-  background: url('/images/hero_education_1777145565866.png') center/cover no-repeat;
+  background: url('../assets/images/hero_education_1777145565866.png') center/cover no-repeat;
 }
 
 .heroOverlay {

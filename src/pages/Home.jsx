@@ -1,6 +1,7 @@
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 import { CheckCircle, BookOpen, Users, Brain, Activity, FileText, Star, Award, TrendingUp, ShieldCheck } from 'lucide-react';
+import aboutTeacherImg from '../assets/images/about_teacher_1777145581279.png';
 
 const Home = () => {
   return (
@@ -61,7 +62,7 @@ const Home = () => {
             <Link to="/about" className={styles.learnMore}>Read Our Story →</Link>
           </div>
           <div className={styles.snippetImage}>
-             <img src="/images/about_teacher_1777145581279.png" alt="Happy Teacher" />
+             <img src={aboutTeacherImg} alt="Happy Teacher" />
           </div>
         </div>
       </section>
