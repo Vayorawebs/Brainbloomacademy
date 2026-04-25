@@ -1,0 +1,135 @@
+.footer {
+  background-color: var(--maroon);
+  color: var(--white);
+  padding-top: 60px;
+  border-top: 4px solid var(--orange);
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brain {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+}
+
+.academy {
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.tagline {
+  color: #cccccc;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.heading {
+  color: var(--orange);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--orange);
+}
+
+.links {
+  list-style: none;
+}
+
+.links li {
+  margin-bottom: 12px;
+}
+
+.links a {
+  color: #e0e0e0;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.links a:hover {
+  color: var(--orange);
+  padding-left: 5px;
+}
+
+.contactInfo {
+  list-style: none;
+}
+
+.contactInfo li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+.contactInfo a {
+  transition: color 0.3s;
+}
+
+.contactInfo a:hover {
+  color: var(--orange);
+}
+
+.icon {
+  color: var(--orange);
+  margin-top: 4px;
+}
+
+.iconLocation {
+  color: var(--orange);
+  min-width: 24px;
+  margin-top: 2px;
+}
+
+.bottomBar {
+  background-color: var(--dark-maroon);
+  padding: 20px 0;
+  text-align: center;
+  color: #bbbbbb;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

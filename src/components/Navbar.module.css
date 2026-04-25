@@ -1,0 +1,138 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--maroon);
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+  padding: 10px 0;
+  background-color: var(--dark-maroon);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brain {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+}
+
+.academy {
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.navLinks a {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--orange);
+  transition: width 0.3s ease;
+}
+
+.navLinks a:hover::after,
+.navLinks a.activeLink::after {
+  width: 100%;
+}
+
+.navLinks a:hover,
+.navLinks a.activeLink {
+  color: var(--orange);
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navLinks {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--maroon);
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    clip-path: circle(0% at 100% 0);
+    transition: clip-path 0.5s ease-in-out;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  }
+
+  .navLinks.active {
+    clip-path: circle(150% at 100% 0);
+  }
+
+  .ctaContainer {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+}

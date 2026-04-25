@@ -1,0 +1,192 @@
+.contactPage {
+  padding-top: 70px;
+}
+
+.header {
+  background: linear-gradient(135deg, var(--maroon), var(--dark-maroon));
+  color: var(--white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactSection {
+  padding: 80px 0;
+  background-color: var(--light);
+}
+
+.contactContainer {
+  display: flex;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.infoCard {
+  flex: 1;
+  background-color: var(--maroon);
+  color: var(--white);
+  padding: 50px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.infoCard h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.infoSubtitle {
+  color: #d0d0d0;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.infoItems {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.icon {
+  color: var(--orange);
+}
+
+.infoItem a {
+  transition: color 0.3s;
+}
+
+.infoItem a:hover {
+  color: var(--orange);
+}
+
+.decorativeCircle1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  bottom: -50px;
+  right: -50px;
+}
+
+.decorativeCircle2 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  top: 50px;
+  right: -100px;
+}
+
+.formContainer {
+  flex: 2;
+  padding: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+}
+
+.formRow .inputGroup {
+  flex: 1;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 0.95rem;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.2);
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  align-self: flex-start;
+  padding: 14px 35px;
+}
+
+.mapSection {
+  background-color: var(--light);
+}
+
+.mapSection iframe {
+  display: block;
+  border-top: 4px solid var(--orange);
+}
+
+@media (max-width: 992px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .formContainer {
+    padding: 30px 20px;
+  }
+}
